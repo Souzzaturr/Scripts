@@ -1,6 +1,6 @@
 export class Exame {
   constructor(resposta, peso) {
-      this.resposta = resposta;
+    this.resposta = resposta;
     this.pesos = peso;
     this.provas = [];
   }
