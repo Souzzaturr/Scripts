@@ -39,7 +39,7 @@ export class Exame {
     return lista_notas.filter((nota) => nota > numero);
   }
 
-  lista_notas() {
+  listar_notas() {
     return this.provas.map( (prova) => prova.nota );
   }
 }
