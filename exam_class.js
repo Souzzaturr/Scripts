@@ -16,12 +16,7 @@ export class Exame {
   }
 
   media_notas() {
-    let soma = Object.values(this.provas).reduce(
-      (soma, prova) => soma + prova.nota,
-      0
-    );
-
-    return soma / this.provas.length;
+    return this.provas.reduce( (soma, prova) => soma + prova.nota, 0 ) / this.provas.length
   }
 
   menor(count = 1) {
