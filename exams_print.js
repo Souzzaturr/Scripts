@@ -24,7 +24,7 @@ console.log(`Notas abaixo de 7.0: ${exame.menor_que(7)}`);
 
 console.log(`Notas acima de 7.0: ${exame.maior_que(7)}`);
 
-console.log(`Lista de notas: ${exame.lista_notas()}`)
+console.log(`Lista de notas: ${exame.listar_notas()}`)
 
 exame.adiciona({
   aluno: 'Bob',
@@ -41,4 +41,4 @@ console.log(`Notas abaixo de 7.0: ${exame.menor_que(7)}`);
 
 console.log(`Notas acima de 7.0: ${exame.maior_que(7)}`);
 
-console.log(`Lista de notas: ${exame.lista_notas()}`)
+console.log(`Lista de notas: ${exame.listar_notas()}`)
