@@ -19,12 +19,8 @@ export class Exame {
     return this.provas.reduce( (soma, prova) => soma + prova.nota, 0 ) / this.provas.length
   }
 
-  menor(count = 1) {
-    let lista_notas = this.provas.map((prova) => prova.nota);
-
-    lista_notas.sort((a, b) => a - b);
-
-    return lista_notas.slice(0, count);
+  menor() {
+    return this.provas.reduce( (menor, prova) => prova.nota < menor ? menor = prova.nota : menor, this.provas[0].nota );
   }
 
   maior(count = 1) {
