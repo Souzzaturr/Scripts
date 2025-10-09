@@ -40,10 +40,6 @@ export class Exame {
   }
 
   lista_notas() {
-    let notas_list = [];
-
-    this.provas.forEach( (prova) => notas_list.push(prova.nota) );
-
-    return notas_list
+    return this.provas.map( (prova) => prova.nota );
   }
 }
