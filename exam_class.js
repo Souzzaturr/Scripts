@@ -24,11 +24,7 @@ export class Exame {
   }
 
   maior(count = 1) {
-    let lista_notas = this.provas.map((prova) => prova.nota);
-
-    lista_notas.sort((a, b) => a - b);
-
-    return lista_notas.slice(-count);
+    return this.provas.reduce( (maior, prova) => maior < prova.nota ? maior = prova.nota : maior, this.provas[0].nota);
   }
 
   menor_que(numero) {
